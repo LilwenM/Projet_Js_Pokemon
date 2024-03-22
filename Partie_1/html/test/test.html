@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Test</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <script src="../data/pokemon.js"></script>
+    <script src="../data/generation.js"></script>
+    <script src="../data/pokemon_type.js"></script>
+    <script src="../data/pokemon_moves.js"></script>
+    <script src="../data/charged_moves.js"></script>
+    <script src="../data/fast_moves.js"></script>
+    <script src="../data/type_effectiveness.js"></script>
+    <script src="../data/cp_multiplier.js"></script>
+
+    <script src="../data/class_pokemon.js"></script>
+    <script src="../data/class_type.js"></script>
+    <script src="../data/class_attack.js"></script>
+    
+    <script src="../data/import_pokemon.js"></script>
+
+    <table>
+        <tr>
+            <th>getPokemonsByType</th>
+            <td style="text-align: right;"><label for="typeP">Type Pokémon</label></td>
+            <td><input type="text" id="typeP"></td>
+            <td>
+                <p>Liste des pokémon d'un type donné</p>
+                <a href="#" onclick="console.table(getPokemonsByType(typeP));">Lancer</a>
+            </td>
+        </tr>
+        <tr>
+            <th>getPokemonByName</th>
+            <td style="text-align: right;"><label for="nameP1">Nom Pokémon</label></td>
+            <td><input type="text" id="nameP1"></td>
+            <td>
+                <p>Pokémons par nom</p>
+                <a href="#" onclick="console.table(getPokemonByName(nameP1));">Lancer</a>
+            </td>
+        </tr>
+        <tr>
+            <th>getAttacksByType</th>
+            <td style="text-align: right;"><label for="typeA">Type Attaque</label></td>
+            <td><input type="text" id="typeA"></td>
+            <td>
+                <p>Liste des attaques d'un type donné</p>
+                <a href="#" onclick="console.table(getAttacksByType(typeA));">Lancer</a>
+            </td>
+        </tr>
+        <tr>
+            <th>sortPokemonByName</th>
+            <td></td>
+            <td></td>
+            <td>
+                <p>Liste des pokémons triés par nom</p>
+                <a href="#" onclick="console.table(sortPokemonByName());">Lancer</a>
+            </td>
+        </tr>
+        <tr>
+            <th>sortPokemonByStamina</th>
+            <td></td>
+            <td></td>
+            <td>
+                <p>Liste des pokémons triés par endurance</p>
+                <a href="#" onclick="console.table(sortPokemonByStamina());">Lancer</a>
+            </td>
+        </tr>
+        <tr>
+            <th>getWeakestEnemies</th>
+            <td style="text-align: right;"><label for="nameA">Nom Attaque</label></td>
+            <td><input type="text" id="nameA"></td>
+            <td>
+                <p>Liste des pokémons les plus sensible à une attaque</p>
+                <a href="#" onclick="console.table(getWeakestEnemies(nameA));">Lancer</a>
+            </td>
+        </tr>
+        <tr>
+            <th>getBestAttackTypesForEnemy</th>
+            <td style="text-align: right;"><label for="nameP2">Nom Pokémon</label></td>
+            <td><input type="text" id="nameP2"></td>
+            <td>
+                <p>Liste des meilleurs types d’attaque pour un pokémon</p>
+                <a href="#" onclick="console.table(getBestAttackTypesForEnemy(nameP2));">Lancer</a>
+            </td>
+        </tr>
+    </table> 
+
+    <script src="test.js"></script>
+
+</body>
+</html>

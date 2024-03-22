@@ -1,0 +1,70 @@
+* { font-family: sans-serif; }
+
+table {
+    margin : 0 auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-size: 0.9rem;
+}
+
+thead, th { background-color: rgb(228 240 245); }
+
+th, td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+.plink {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+.plink a { color: rgb(0, 64, 91); }
+.plink img { width: 20px; }
+
+.type {
+    width: 80px;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;    
+}
+
+.tab_image { width: 15px; }
+
+.Grass { background-color : #3BCB01; }
+.Poison { background-color : #AE01CB; }
+.Fire { background-color : #FF7111; }
+.Flying { background-color : #A890FE; }
+.Water { background-color : #717FFF; }
+.Bug { background-color : #9CC31F; }
+.Normal { background-color : #ADAB8D; }
+.Electric { background-color : #FFD525; }
+.Ground { background-color : #E5BC61; }
+.Fairy { background-color : #F9A5D1; }
+.Fighting { background-color : #C80000; }
+.Psychic { background-color : #FE509B; }
+.Rock { background-color : #C49100; }
+.Steel { background-color : #A6A8C6; }
+.Ice { background-color : #88DBEC; }
+.Ghost { background-color : #663993; }
+.Dragon { background-color : #6622EE; }
+.Dark { background-color : #494949; }
+
+dialog { 
+    width: 35em;
+    border-radius: 10px;
+    border: 2px solid rgb(140 140 140);
+}
+
+dialog button {
+    width: 5em;
+    height: 2em;
+    border: 2px solid rgb(140 140 140);    
+    align-self: flex-end;
+}
+
+dialog button:hover {
+    background-color: rgb(140 140 140);
+}
+
